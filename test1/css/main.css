@@ -1,0 +1,29 @@
+.container-centr{
+  width: 17%;
+  margin:0 auto;
+}
+
+.emodzi{
+  width: 10%;
+  margin:0 auto;
+}
+
+.button-auth{
+  width: 100%;
+}
+
+.input-auth{
+  width: 100%;
+  padding: 5px;
+}
+
+.input-alert{
+  width:100%;
+}
+
+.element{
+  width: 100%;
+  height: 10px;
+  margin-top:500px; 
+  background-color: grey;
+}

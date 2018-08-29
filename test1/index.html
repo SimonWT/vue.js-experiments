@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Здарова Пидорасы!</title>
+  </head>
+  <body>
+    <div id="app">
+      <vue-slide-up-down :active="active" >
+      <div id="auth-form" class="container-centr">
+        <h1 class="emodzi">♿</h1>
+        <input v-model="username" type="username" class="form-control input-auth" placeholder="Enter username" data-toggle="tooltip" data-placement="right" title="For example: Sima">
+        <input v-model="password" type="password" class="form-control input-auth" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter passwrod" data-toggle="tooltip" data-placement="right" title="You know password">
+        <p v-if="wrongAuth === 1" class="alert alert-danger input-alert" role="alert">Wrong Username or Password</p>
+        <p v-if="wrongAuth === 2" class="alert alert-success input-alert" role="alert">Welcome!</p>
+        <button v-on:click="checkAuth" class="btn btn-primary btn-lg button-auth">Submit</button>
+        <div class="element"></div>
+      </div>
+    </vue-slide-up-down>
+
+  </div>g
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        Vue.component('vue-slide-up-down', VueSlideUpDown);
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="node_modules/vue-slide-up-down/dist/vue-slide-up-down.umd.js"></script>
+
+  </body>
+</html>
